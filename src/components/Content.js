@@ -32,10 +32,10 @@ export default class Content extends Component{
          <div>
             {beers.map(beer=>{
                return (
-                  <>
-                     <Card key={beer.id} data={beer}/>
+                  <div key={beer.id}>
+                     <Card data={beer}/>
                      <hr />
-                  </>
+                  </div>
                )
             })}
          </div>
