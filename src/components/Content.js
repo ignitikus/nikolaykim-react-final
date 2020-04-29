@@ -4,12 +4,8 @@ import Card from './Card'
 
 
 export default class Content extends Component{
-   constructor(props) {
-      super(props)
-   
-      this.state = {
-         beers: []
-      }
+   state = {
+      beers: []
    }
    
    getBeers = async() => {
